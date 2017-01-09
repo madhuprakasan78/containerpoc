@@ -1,0 +1,6 @@
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+
+docker build -t emirates/node-web-app .
+
+docker run -p 8080:8080 -d emirates/node-web-app
+

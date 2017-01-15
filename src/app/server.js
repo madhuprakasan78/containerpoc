@@ -10,7 +10,7 @@ const app = express();
 
 //Couchbase
 var couchbase = require('couchbase')
-var cluster = new couchbase.Cluster('couchbase://ec2-54-191-81-37.us-west-2.compute.amazonaws.com/');
+var cluster = new couchbase.Cluster('couchbase://ec2-54-202-147-230.us-west-2.compute.amazonaws.com/');
 var bucket = cluster.openBucket('default');
 var N1qlQuery = couchbase.N1qlQuery;
 
